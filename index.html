@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0 ">
+    <title>COBAFRESH BEBIDAS REFRESCANTES</title>
+    <link rel="stylesheet" href="styles/stl.css">
+    <link rel="icon" href="icono.ico">
+    <script>
+
+        function comprar(){
+            alert("Comprado Exitosamente");
+        }
+                
+
+        Saludo = prompt("Como te Llamas?");
+        alert("Bienvenido a CobaFresh "+Saludo);
+
+        window.onscroll = function(){
+            var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (scroll > 500){
+                carrito = document.querySelector("#car");
+                carrito.style.color = "black";
+            }
+            if (scroll < 500){
+                carrito = document.querySelector("#car");
+                carrito.style.color = "beige";
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="img/ICONO.png" width="40%" height="40%">
+        <a class="car" id="car" href="carrito.html">Carrito</a>
+    </header>
+
+    <div id="navg">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <section id="inicio">
+        <h2></h2>
+        <p id="Sub">EMPEZAMOS NUESTRO EMPRENDIMIENTO, EN COBAFRESH TENEMOS GRAN VARIEDAD DE BEBIDAS REFRESCANTES</p>
+    </section>
+
+    <section id="catalogo">
+        <marquee direction=""><h2>Catálogo de Bebidas (Por inicio de Actividades no tenemos gran variedad de Bebidas.)</h2></marquee>
+        <div>
+            
+            <h3 id="nameUV">Ultravioletas</h3>
+            <p> 
+                <h2 id="desc">Descripción de la bebida.</h2> 
+                <br>
+                La bebida esta preparada con: 
+                <br> 
+                <h5>Delawere Punch, Sprite, Bebida Energetica Morada, etc.</h5> 
+                <br>
+            </p>
+                <div id="Grande">
+                    <img id="B1" src="img/Ultravioletas.png" alt="Bebida 1" title="UltraVioleta">
+                    <p id="precioG"><b>UltraVioleta Grande de 500ml
+                        <br>
+                        A 30$!!
+                    </b></p>
+                    <div id="btn1">
+                        <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
+                    </div>
+                </div>
+                <div id="Pequena">
+                    <img id="B2" src="img/UV2.png" alt="Bebida 1" title="UltraVioleta">
+                    <p id="precioG"><b>UltraVioleta Pequeña de 250ml
+                        <br>
+                        A 20$!!
+                    </b></p>
+                    <div id="btn1">
+                        <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
+                    </div>
+                </div>
+        </div>
+        <br>
+        <div>
+            
+            <h3 id="nameRusa">Rusas</h3>
+            <p>
+                <h2 id="desc">Descripción de la bebida.</h2>
+                <br> 
+                Bebida hecha a base de: 
+                <br>
+                <h5>Squirt combinado con Agua Mineral, Limon, Sal y Tajin </h5>
+                <br>
+            </p>
+            <div id="Rgrand">
+                <img id="B3"src="img/R2.jpg"  alt="Bebida 2" title="Rusa">
+                <p id="precioG"><b>Rusa Grande de 500ml
+                    <br>
+                    A 30$!!
+                </b></p>
+                <div id="btn2">
+                    <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
+                </div>
+            </div>
+            <div id="Rpeq">
+                <img id="B4" src="img/Rusas.jpg"  alt="Bebida 2" title="Rusa">
+                <p id="precioG"><b>Rusa Pequeña de 250ml
+                    <br>
+                    A 20$!!
+                </b></p>
+                <div id="btn2">
+                    <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <section id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        Aprovecha la Oferta que tenemos hoy La Bebida Grande ahora cuesta 30$
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <h4>cobafresh@gmail.com</h4>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 COBAFRESH <br> Estel Saul Manuel Rojas <br> 
+        Erika Zaori Rodriguez Navarro <br> Axel Alberto Ortega Garro <br>
+        Pablo Galvez Alvarado <br> Luis Angel Tellez Amaro </p>
+    </footer>
+
+</body>
+
+</html>
