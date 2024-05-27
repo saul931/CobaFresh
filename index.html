@@ -1,150 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0 ">
-    <title>COBAFRESH BEBIDAS REFRESCANTES</title>
-    <link rel="stylesheet" href="styles/stl.css">
-    <link rel="icon" href="icono.ico">
-    <script>
-
-        function comprar(){
-            alert("Comprado Exitosamente");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crepas Deliciosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:	#FDEBD0;
+            margin: 0;
+            padding: 20px;
+        marquee{
+            font-size:40px;
+            font-family:Georgia;
+            color:#34495E;
         }
-                
-
-        Saludo = prompt("Como te Llamas?");
-        alert("Bienvenido a CobaFresh "+Saludo);
-
-        window.onscroll = function(){
-            var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-
-            if (scroll > 500){
-                carrito = document.querySelector("#car");
-                carrito.style.color = "black";
-            }
-            if (scroll < 500){
-                carrito = document.querySelector("#car");
-                carrito.style.color = "beige";
-            }
-
+        header {
+            background-color:#DC7633;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
-
-    </script>
+        h1, h2 {
+            color:#C0392B;
+        }
+        .crepa-section {
+            margin: 20px 0;
+        }
+        .crepa-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .crepa-list li {
+            background-color:#EDBB99;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 3%;
+        img {
+            width:440px;
+            height:440px;
+        }
+        img .logo {
+            width:40px;
+            height:40px;
+        }
+    </style>
 </head>
-
 <body>
-
     <header>
-        <img id="logo" src="img/ICONO.png" width="40%" height="40%">
-        <a class="car" id="car" href="carrito.html">Carrito</a>
+        <marquee>Crepas <i>ESMR<i></marquee>
+        <img id="logo"src="logo.jpg" alt="logo">
     </header>
-
-    <div id="navg">
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#catalogo">Catálogo</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <a href="#ofertas">Ofertas</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
-
-    <section id="inicio">
-        <h2></h2>
-        <p id="Sub">EMPEZAMOS NUESTRO EMPRENDIMIENTO, EN COBAFRESH TENEMOS GRAN VARIEDAD DE BEBIDAS REFRESCANTES</p>
-    </section>
-
-    <section id="catalogo">
-        <marquee direction=""><h2>Catálogo de Bebidas (Por inicio de Actividades no tenemos gran variedad de Bebidas.)</h2></marquee>
-        <div>
-            
-            <h3 id="nameUV">Ultravioletas</h3>
-            <p> 
-                <h2 id="desc">Descripción de la bebida.</h2> 
-                <br>
-                La bebida esta preparada con: 
-                <br> 
-                <h5>Delawere Punch, Sprite, Bebida Energetica Morada, etc.</h5> 
-                <br>
-            </p>
-                <div id="Grande">
-                    <img id="B1" src="img/Ultravioletas.png" alt="Bebida 1" title="UltraVioleta">
-                    <p id="precioG"><b>UltraVioleta Grande de 500ml
-                        <br>
-                        A 30$!!
-                    </b></p>
-                    <div id="btn1">
-                        <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
-                    </div>
-                </div>
-                <div id="Pequena">
-                    <img id="B2" src="img/UV2.png" alt="Bebida 1" title="UltraVioleta">
-                    <p id="precioG"><b>UltraVioleta Pequeña de 250ml
-                        <br>
-                        A 20$!!
-                    </b></p>
-                    <div id="btn1">
-                        <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
-                    </div>
-                </div>
-        </div>
-        <br>
-        <div>
-            
-            <h3 id="nameRusa">Rusas</h3>
-            <p>
-                <h2 id="desc">Descripción de la bebida.</h2>
-                <br> 
-                Bebida hecha a base de: 
-                <br>
-                <h5>Squirt combinado con Agua Mineral, Limon, Sal y Tajin </h5>
-                <br>
-            </p>
-            <div id="Rgrand">
-                <img id="B3"src="img/R2.jpg"  alt="Bebida 2" title="Rusa">
-                <p id="precioG"><b>Rusa Grande de 500ml
-                    <br>
-                    A 30$!!
-                </b></p>
-                <div id="btn2">
-                    <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
-                </div>
-            </div>
-            <div id="Rpeq">
-                <img id="B4" src="img/Rusas.jpg"  alt="Bebida 2" title="Rusa">
-                <p id="precioG"><b>Rusa Pequeña de 250ml
-                    <br>
-                    A 20$!!
-                </b></p>
-                <div id="btn2">
-                    <button onclick="comprar()"><p id="shop">COMPRAR AHORA</p></button>
-                </div>
-            </div>
-            <br>
-        </div>
-    </section>
-
-    <section id="ofertas">
-        <h2>Ofertas Especiales</h2>
-        Aprovecha la Oferta que tenemos hoy La Bebida Grande ahora cuesta 30$
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <h4>cobafresh@gmail.com</h4>
-    </section>
-
+    <main>
+        <section class="crepa-section" id="dulces">
+            <h2>Crepas Dulces</h2>
+            <ul class="crepa-list">
+                <li>Crema de Avellana <img src="nutella.jpg" alt="crepa de Nutella"><h1 id="precio">22$</h1></li>
+                <li>Mermelada de Fresa <img src="fresa.jpg" alt="crepa de fresa"><h1 id="precio">20$</h1></li>
+                <li>Lechera <img src="lechera.jpg" alt="crepa de lechera"><h1 id="precio">20$</h1></li>
+            </ul>
+        </section>
+        <section class="crepa-section" id="saladas">
+            <h2>Crepas Saladas</h2>
+            <ul class="crepa-list">
+                <li>Crepizza <img src="crepizza.jpg" alt="crepizza"><h1 id="precio">25$</h1></li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2023 COBAFRESH <br> Estel Saul Manuel Rojas <br> 
-        Erika Zaori Rodriguez Navarro <br> Axel Alberto Ortega Garro <br>
-        Pablo Galvez Alvarado <br> Luis Angel Tellez Amaro </p>
+        <i>Estel Saúl Manuel Rojas<i>
+        <br>
+        <b>Uzzi Barcilay Macias Armijo<b>
+<br>
+        Erika Zaori Rodriguez Navarro 
+<br>
+        Brigitte Estrella 
+<br>
+        Gisselle Ramos Hernández 
     </footer>
-
 </body>
-
 </html>
